@@ -30,7 +30,7 @@ public class UserNameValidatorTest {
     @Test
     public void givenPassword_WhenMinimum8Char_ShouldReturnTrue() {
         UserValidator obj = new UserValidator();
-        boolean result = obj.userValidPassword("9AA56&od");
+        boolean result = obj.userValidPassword("9AA56&ot");
         Assert.assertEquals(true, result);
     }
 
