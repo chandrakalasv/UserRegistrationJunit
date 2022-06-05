@@ -9,5 +9,8 @@ public class UserValidator {
     public boolean userValidLastName(String userLastName) {
         return Pattern.matches("^[A-Z][a-z]{2,}", userLastName);
     }
+    public boolean userValidMailId(String uservalidMail) {
+        return Pattern.matches("^[a-z]+([_+.-]?[a-z0-9])*(@)(bl.co.)[a-z]{2}$", uservalidMail);
+    }
 
 }
