@@ -10,7 +10,7 @@ public class UserValidator {
         return Pattern.matches("^[A-Z][a-z]{2,}", userLastName);
     }
     public boolean userValidMailId(String uservalidMail) {
-        return Pattern.matches("^[a-z]+([_+.-]?[a-z0-9])*(@)(bl.co.)[a-z]{2}$", uservalidMail);
+        return Pattern.matches("^(abc)([_+.-]?[a-z0-9])*(@)(bl.co.)[a-z]{2}$", uservalidMail);
     }
     public boolean userValidMobileNumber(String userValidMobileNumber) {
         return Pattern.matches("^(91)[\\s][0-9]{10}", userValidMobileNumber);
