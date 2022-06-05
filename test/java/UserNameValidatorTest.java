@@ -34,5 +34,10 @@ public class UserNameValidatorTest {
         Assert.assertEquals(true, result);
     }
 
-
+    @Test
+    public void givenSampleMail_WhenValid_ShouldReturnTrue() {
+        UserValidator obj = new UserValidator();
+        boolean result = obj.userValidSampleMail("abc@yahoo.com");
+        Assert.assertEquals(true, result);
+    }
 }

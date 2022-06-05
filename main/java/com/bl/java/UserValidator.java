@@ -19,4 +19,7 @@ public class UserValidator {
         return Pattern.matches("(?=.*[A-Z])(?=.*[0-9])(?=.*[@$!%*#?&]).{8}$", userValidPassword);
     }
 
+    public boolean userValidSampleMail(String userValidSampleMail) {
+        return Pattern.matches("^(abc)([+-.]?[\\d])*[@][0-9a-z]+([.][a-z]{2,3}){1,2}$", userValidSampleMail);
+    }
 }
