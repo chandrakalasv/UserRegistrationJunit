@@ -16,7 +16,7 @@ public class UserValidator {
         return Pattern.matches("^(91)[\\s][0-9]{10}", userValidMobileNumber);
     }
     public boolean userValidPassword(String userValidPassword) {
-        return Pattern.matches(".{8}$", userValidPassword);
+        return Pattern.matches("(?=.*[A-Z]).{8}$", userValidPassword);
     }
 
 }
