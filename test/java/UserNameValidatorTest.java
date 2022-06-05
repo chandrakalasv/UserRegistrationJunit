@@ -21,5 +21,11 @@ public class UserNameValidatorTest {
         boolean result = obj.userValidMailId("abc.xyz@bl.co.in");
         Assert.assertEquals(true, result);
     }
+    @Test
+    public void givenMobileNumber_WhenValidFormat_ShouldReturnTrue() {
+        UserValidator obj = new UserValidator();
+        boolean result = obj.userValidMobileNumber("91 9875674839");
+        Assert.assertEquals(true, result);
+    }
 
 }
