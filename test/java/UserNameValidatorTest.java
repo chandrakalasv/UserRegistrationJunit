@@ -27,5 +27,12 @@ public class UserNameValidatorTest {
         boolean result = obj.userValidMobileNumber("91 9875674839");
         Assert.assertEquals(true, result);
     }
+    @Test
+    public void givenPassword_WhenMinimum8Char_ShouldReturnTrue() {
+        UserValidator obj = new UserValidator();
+        boolean result = obj.userValidPassword("9AA56&od");
+        Assert.assertEquals(true, result);
+    }
+
 
 }
