@@ -51,7 +51,7 @@ import java.util.regex.Pattern;
         @Test
         public void givenEmail_WhenProper_ShouldReturnAsPerCondition() {
             UserValidator obj = new UserValidator();
-            boolean result = obj.userValidSampleMail(email);
+            boolean result = obj.userValidSampleMail.test(email);
             Assert.assertEquals(this.expectedResult, result );
         }
     }

@@ -3,23 +3,23 @@ package com.bl.java;
 import java.util.Scanner;
 
 public class UserValidateInput {
-   static UserValidator register = new UserValidator();
     public static void main(String[] args) {
+        UserValidator register = new UserValidator();
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the user first name");
         String userFirstName = sc.nextLine();
-        register.userValidFirstName(userFirstName);
+        register.userFirstName.test(userFirstName);
         System.out.println("Enter the user last name");
         String userLastName = sc.nextLine();
-        register.userValidLastName(userLastName);
+        register.userLastName.test(userLastName);
         System.out.println("Enter the user Email");
         String userValidMail = sc.nextLine();
-        register.userValidMailId(userValidMail);
+        register.userValidMailId.test(userValidMail);
         System.out.println("Enter the user mobile number");
         String userValidMobileNumber = sc.nextLine();
-        register.userValidMobileNumber(userValidMobileNumber);
+        register.userValidMobileNumber.test(userValidMobileNumber);
         System.out.println("Enter the user password");
         String userValidPassword = sc.nextLine();
-        register.userValidPassword(userValidPassword);
+        register.userValidPassword.test(userValidPassword);
     }
 }
